@@ -6,6 +6,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxHtmlEditor - How to format MS Word's  text without using 'Paste From Word'
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e2161/)**
+<!-- run online end -->
 
 
 <p>This example demonstrates how to format html content when an end-user pastes text that has been copied from Ms Word text. </p><p>There is an ASPxHtmlEditor on the form. We've handled the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxHtmlEditorScriptsASPxClientHtmlEditor_HtmlChangedtopic">HtmlChanged</a> client-side event to know when a text has been changed and <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxHtmlEditorScriptsASPxClientHtmlEditor_CommandExecutedtopic">CommandExecuted</a> event to know when a text needs to be pasted.  In addition, a "process" local variable is maintained, to indicate different stages of these operations, and avoid infinite loops.</p><p>1. When a command is performed, we're using the CommandExecuted event handler to check that this is a "KBPASTE_COMMAND" command (preparation for paste).<br />
